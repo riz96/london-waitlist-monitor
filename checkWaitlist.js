@@ -4,8 +4,8 @@ const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fet
 // === CONFIG ===
 const MODAL_URL = 'https://www.eventbrite.co.uk/checkout-external?eid=1229564453379&parent=https%3A%2F%2Fwww.eventbrite.co.uk%2Fe%2Flondon-one-piece-card-game-april-wave-1-regional-champs-2025-tickets-1229564453379&modal=1&aff=oddtdtdirect';
 const KEYWORD = 'Join Waitlist';
-const TELEGRAM_BOT_TOKEN = '8140053608:AAGQCeIgmKaeqDWdXlGAZqD1r71ZBaSOWCY'; // replace with your bot token
-const TELEGRAM_CHAT_ID = '330428977'; // replace with your user ID or group chat ID
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 const CHECK_INTERVAL_MS = 10000;
 
 // === FUNCTION TO SEND TELEGRAM MESSAGE ===
