@@ -6,7 +6,7 @@ const MODAL_URL = 'https://www.eventbrite.co.uk/checkout-external?eid=1229564453
 const KEYWORD = 'Join Waitlist';
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-const CHECK_INTERVAL_MS = 10000;
+const CHECK_INTERVAL_MS = 180000;
 
 // === FUNCTION TO SEND TELEGRAM MESSAGE ===
 async function sendTelegramAlert(message) {
