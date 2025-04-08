@@ -30,7 +30,10 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // === LOOP FUNCTION ===
 async function startMonitoring() {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ 
+    headless: true, 
+    args: ['--no-sandbox', '--disable-setuid-sandbox'] 
+  });
   const page = await browser.newPage();
 
   while (true) {
