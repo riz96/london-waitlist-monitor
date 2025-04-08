@@ -1,5 +1,5 @@
-const puppeteer = require('puppeteer');
-const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
+import puppeteer from 'puppeteer';
+import fetch from 'node-fetch';
 
 // === CONFIG ===
 const MODAL_URL = 'https://www.eventbrite.co.uk/checkout-external?eid=1229564453379&parent=https%3A%2F%2Fwww.eventbrite.co.uk%2Fe%2Flondon-one-piece-card-game-april-wave-1-regional-champs-2025-tickets-1229564453379&modal=1&aff=oddtdtdirect';
