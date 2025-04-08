@@ -42,6 +42,7 @@ async function startMonitoring() {
 
       if (pageContent.includes(KEYWORD)) {
         console.log(`[✅ FOUND] "${KEYWORD}" is present.`);
+        await sendTelegramAlert(`SIMPLE TEST TO SEE IF IT WORKS!!`);
       } else {
         console.log(`[❌ MISSING] "${KEYWORD}" is NOT present.`);
         await sendTelegramAlert(`⚠️ "${KEYWORD}" is NOT present on the Eventbrite modal page.`);
